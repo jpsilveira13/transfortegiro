@@ -1,80 +1,64 @@
-<!--
-author: W3layouts
-author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Truckage a Autos and Transportation Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+    <title>Locação Munck, Guindaste e Caçamba - Transforte Giro</title>
     <!-- for-mobile-apps -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="Truckage Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <meta name="description" content="Locação de caçambas, Muncks e Guindastse para movimentação, desova, remoção e içamento de maquinas e peças diversas. Todos os equipamentos passam por manutenções e vist..."/>
+    <meta name="language" content="pt-br" />
+    <meta name="keywords" content="Transforte Giro, aluguel caçambas uberaba, aluguel muncks uberaba, aluguel guindastes uberaba, obra uberaba, aluguel uberabaa">
+    <meta name="robots" content="ALL" />
+    <meta name="distribution" content="Global" />
+    <meta name="rating" content="General" />
+    <meta name="author" content="João Paulo da Silveira" />
+    <meta name="Copyright" content="Copyright (c) Transforte Giro"  />
+    <!-- tags facebook -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Transforte" />
+    <meta property="og:description" content="Locação caçambas, Muncks e Guindastes para movimentação, desova, remoção e içamento de máquinas e peças diversas. Todos os equipamentos passam por manutenções e vist..." />
+    <meta property="og:url" content="http://www.transfortegiro.com.br/l/" />
+    <meta property="og:site_name" content="Transforte" />
+    <meta property="og:image" content="{{url('/images/logo-facebook.png')}}" />
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
         function hideURLbar(){ window.scrollTo(0,1); } </script>
     <!-- //for-mobile-apps -->
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" property="" />
+    <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
     <!-- js -->
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <!-- //js -->
-    <!-- load-more -->
-    <script>
-        $(document).ready(function () {
-            size_li = $("#myList li").size();
-            x=1;
-            $('#myList li:lt('+x+')').show();
-            $('#loadMore').click(function () {
-                x= (x+1 <= size_li) ? x+1 : size_li;
-                $('#myList li:lt('+x+')').show();
-            });
-            $('#showLess').click(function () {
-                x=(x-1<0) ? 1 : x-1;
-                $('#myList li').not(':lt('+x+')').hide();
-            });
-        });
-    </script>
-    <!-- //load-more -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{url('images/logo/favicon.ico')}}">
     <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=190387111301918";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 <!-- header -->
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script type='text/javascript'>
+    (function(){ var widget_id = 'HvF2W2Tlwk';var d=document;var w=window;function l(){
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
 <div class="header">
     <div class="container">
-        <div class="w3l_header_left">
+        <div class="w3l_header_left text-center">
             <ul>
-                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+ (123) 111 222 333</li>
-                <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
-            </ul>
-        </div>
-        <div id="example2">
-            <div class="wrapper2">
-                <div class="content-wrapper2">
-                    <div class="search-button2">
-                        <span></span>
-                    </div>
-                    <div class="search-box2">
-                        <form action="#" method="post">
-                            <input type="text" name="Search" placeholder="Search Here..." required="">
-                            <input type="submit" value="Send"> <img src="images/close.png" alt=" " />
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="w3l_header_right">
-            <ul>
-                <li><a href="login.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>log in</a></li>
-                <li><a href="sign-up.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>sign up</a></li>
+                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(34) 3322-6022 / 3312-3106</li>
+                <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:administrativo@pwtransforte.com.br">administrativo@pwtransforte.com.br</a></li>
             </ul>
         </div>
         <div class="clearfix"> </div>
-        <script type="text/javascript" src="js/demo.js"></script>
+
     </div>
 </div>
 <div class="logo_nav">
@@ -89,7 +73,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                 </button>
                 <div class="logo">
-                    <h1><a class="navbar-brand" href="index.html">Truc<span>k</span>age</a></h1>
+                    <h1>
+                        <a class="navbar-brand logo-transforte" href="{{url('/')}}">
+                            <img src="{{url('images//logo/logo-header.png')}}" class="img-responsive">
+                        </a>
+                    </h1>
                 </div>
             </div>
 
@@ -97,11 +85,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
                 <nav class="link-effect-2" id="link-effect-2">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html"><span data-hover="Home">Home</span></a></li>
-                        <li><a href="services.html"><span data-hover="Services">Services</span></a></li>
-                        <li><a href="about.html"><span data-hover="About">About</span></a></li>
-                        <li><a href="short-codes.html"><span data-hover="Short Codes">Short Codes</span></a></li>
-                        <li><a href="mail.html"><span data-hover="Mail Us">Mail Us</span></a></li>
+                        <li class="active"><a href="{{url('/')}}"><span data-hover="Home">Home</span></a></li>
+                        <li><a href="{{url('servicos')}}"><span data-hover="Serviços">Serviços</span></a></li>
+                        <li><a href="{{url('sobre')}}"><span data-hover="Sobre">Sobre</span></a></li>
+                        <li><a href="{{url('galeria-fotos')}}"><span data-hover="Galeria de Fotos">Galeria de Fotos</span></a></li>
+                        <!--<li><a href="#"><span data-h</a> </li> -->
+                        <li><a href="{{url('contato')}}"><span data-hover="Contato">Contato</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -109,336 +98,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </nav>
     </div>
 </div>
-<!-- //header -->
-<!-- banner -->
-<div class="banner">
-    <div class="container">
-        <div class="w3ls_banner_info">
-            <h2>transport</h2>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt.</p>
-            <div class="wthree_more">
-                <a href="single.html" class="button--wayra button--border-thick button--text-upper button--size-s">Learn More</a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- //banner -->
-
-<!-- banner-bottom -->
-<div class="banner-bottom">
-    <div class="container">
-        <div class="col-md-6 banner_bottom_left">
-            <h3>occaecat cupidatat proident</h3>
-            <p><i>Ut enim ad minima veniam</i> Quis nostrum exercitationem ullam corporis suscipit
-                laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure
-                reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.</p>
-            <div class="wthree_more wthree_more1">
-                <a href="single.html" class="button--wayra button--border-thick button--text-upper button--size-s">Read More</a>
-            </div>
-        </div>
-        <div class="col-md-6 banner_bottom_right">
-            <div class="wthree_banner_bottom_right_grids">
-                <div class="col-md-6 banner_bottom_right_grid">
-                    <div class="view view-tenth">
-                        <div class="agile_text_box">
-                            <i></i>
-                            <h3>heavy transport facility</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-                        </div>
-                        <div class="mask">
-                            <img src="images/1.jpg" class="img-responsive" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 banner_bottom_right_grid">
-                    <div class="view view-tenth">
-                        <div class="agile_text_box">
-                            <i class="men"></i>
-                            <h3>service support</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-                        </div>
-                        <div class="mask">
-                            <img src="images/2.jpg" class="img-responsive" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-            <div class="wthree_banner_bottom_right_grids">
-                <div class="col-md-6 banner_bottom_right_grid">
-                    <div class="view view-tenth">
-                        <div class="agile_text_box">
-                            <i class="shipping"></i>
-                            <h3>transport charges free</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-                        </div>
-                        <div class="mask">
-                            <img src="images/3.jpg" class="img-responsive" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 banner_bottom_right_grid">
-                    <div class="view view-tenth">
-                        <div class="agile_text_box">
-                            <i class="clock"></i>
-                            <h3>ontime delivery</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip.</p>
-                        </div>
-                        <div class="mask">
-                            <img src="images/4.jpg" class="img-responsive" alt="" />
-                        </div>
-                    </div>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
-        </div>
-        <div class="clearfix"> </div>
-    </div>
-</div>
-<!-- banner-bottom -->
-
-<!-- banner-bottom1 -->
-<div class="banner-bottom1">
-    <div class="col-md-6 agile_banner_bottom1_left">
-        <img src="images/5.jpg" alt=" " class="img-responsive" />
-    </div>
-    <div class="col-md-6 agile_banner_bottom1_right">
-        <h3>occaecat cupidatat non proident, sunt in culpa qui officia</h3>
-        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
-            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
-            adipisci velit, sed quia non numquam eius modi tempora incidunt.</p>
-        <div class="details">
-            <a href="single.html">More Details</a>
-        </div>
-    </div>
-    <div class="clearfix"> </div>
-</div>
-<!-- banner-bottom1 -->
-
-<!-- news -->
-<div class="news">
-    <div class="container">
-        <h3>news</h3>
-        <p class="quia">from our blog</p>
-        <div class="agileits_news_grids">
-            <div class="tab-1 resp-tab-content">
-                <div class="load_more">
-                    <ul id="myList">
-                        <li>
-                            <div class="l_g">
-                                <div class="col-md-6 agileits_news_grid_left">
-                                    <div class="agileits_news_grid_left_gridl">
-                                        <p class="para1">28 <span>June- 2016</span></p>
-                                        <p class="para1"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#"><span>comments- 8</span></a></p>
-                                        <p><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i><a href="#"><span>view- 21</span></a></p>
-                                    </div>
-                                    <div class="agileits_news_grid_left_gridr">
-                                        <img src="images/6.jpg" alt=" " class="img-responsive" />
-                                        <h4><a href="single.html">tempora incidunt sit</a></h4>
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            quam nihil molestiae consequatur, vel illum qui dolorem.</p>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="col-md-6 agileits_news_grid_left">
-                                    <div class="agileits_news_grid_left_gridl">
-                                        <p class="para1">30 <span>June- 2016</span></p>
-                                        <p class="para1"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#"><span>comments- 5</span></a></p>
-                                        <p><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i><a href="#"><span>view- 34</span></a></p>
-                                    </div>
-                                    <div class="agileits_news_grid_left_gridr">
-                                        <img src="images/7.jpg" alt=" " class="img-responsive" />
-                                        <h4><a href="single.html">illumqui dolorem eum</a></h4>
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            quam nihil molestiae consequatur, vel illum qui dolorem.</p>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="l_g">
-                                <div class="col-md-6 agileits_news_grid_left">
-                                    <div class="agileits_news_grid_left_gridl">
-                                        <p class="para1">28 <span>June- 2016</span></p>
-                                        <p class="para1"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#"><span>comments- 8</span></a></p>
-                                        <p><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i><a href="#"><span>view- 21</span></a></p>
-                                    </div>
-                                    <div class="agileits_news_grid_left_gridr">
-                                        <img src="images/8.jpg" alt=" " class="img-responsive" />
-                                        <h4><a href="single.html">tempora incidunt eius</a></h4>
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            quam nihil molestiae consequatur, vel illum qui dolorem.</p>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="col-md-6 agileits_news_grid_left">
-                                    <div class="agileits_news_grid_left_gridl">
-                                        <p class="para1">30 <span>June- 2016</span></p>
-                                        <p class="para1"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#"><span>comments- 5</span></a></p>
-                                        <p><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i><a href="#"><span>view- 34</span></a></p>
-                                    </div>
-                                    <div class="agileits_news_grid_left_gridr">
-                                        <img src="images/9.jpg" alt=" " class="img-responsive" />
-                                        <h4><a href="single.html">illumqui dolorem eum</a></h4>
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            quam nihil molestiae consequatur, vel illum qui dolorem.</p>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="l_g">
-                                <div class="col-md-6 agileits_news_grid_left">
-                                    <div class="agileits_news_grid_left_gridl">
-                                        <p class="para1">28 <span>June- 2016</span></p>
-                                        <p class="para1"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#"><span>comments- 8</span></a></p>
-                                        <p><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i><a href="#"><span>view- 21</span></a></p>
-                                    </div>
-                                    <div class="agileits_news_grid_left_gridr">
-                                        <img src="images/10.jpg" alt=" " class="img-responsive" />
-                                        <h4><a href="single.html">tempora incidunt eius</a></h4>
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            quam nihil molestiae consequatur, vel illum qui dolorem.</p>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="col-md-6 agileits_news_grid_left">
-                                    <div class="agileits_news_grid_left_gridl">
-                                        <p class="para1">30 <span>June- 2016</span></p>
-                                        <p class="para1"><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="#"><span>comments- 5</span></a></p>
-                                        <p><i class="glyphicon glyphicon-eye-open" aria-hidden="true"></i><a href="#"><span>view- 34</span></a></p>
-                                    </div>
-                                    <div class="agileits_news_grid_left_gridr">
-                                        <img src="images/11.jpg" alt=" " class="img-responsive" />
-                                        <h4><a href="single.html">illumqui dolorem eum</a></h4>
-                                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse
-                                            quam nihil molestiae consequatur, vel illum qui dolorem.</p>
-                                    </div>
-                                    <div class="clearfix"> </div>
-                                </div>
-                                <div class="clearfix"> </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div id="loadMore">Load more</div>
-                    <div id="showLess">Show less</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- //news -->
-<!-- testimonials -->
-<div class="testimonials">
-    <div class="container">
-        <h3>testimonials</h3>
-        <p class="quia">what our customers say</p>
-        <div class="w3_testimonials_grids">
-            <section class="slider">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li>
-                            <div class="w3_testimonials_grid">
-                                <img src="images/1.png" alt=" " class="img-responsive" />
-                                <h4><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                                        impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</i></h4>
-                                <h5>John Frank</h5>
-                                <p>Founder</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="w3_testimonials_grid">
-                                <img src="images/2.png" alt=" " class="img-responsive" />
-                                <h4><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                                        impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</i></h4>
-                                <h5>Michael Doe</h5>
-                                <p>Transport Agent</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="w3_testimonials_grid">
-                                <img src="images/3.png" alt=" " class="img-responsive" />
-                                <h4><i>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil
-                                        impedit quo minus id quod maxime placeat facere possimus, omnis voluptas.</i></h4>
-                                <h5>Thomas Carl</h5>
-                                <p>Transport Agent</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <!-- flexSlider -->
-            <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
-            <script defer src="js/jquery.flexslider.js"></script>
-            <script type="text/javascript">
-                $(window).load(function(){
-                    $('.flexslider').flexslider({
-                        animation: "slide",
-                        start: function(slider){
-                            $('body').removeClass('loading');
-                        }
-                    });
-                });
-            </script>
-            <!-- //flexSlider -->
-        </div>
-    </div>
-</div>
-<!-- //testimonials -->
-<!-- footer -->
+@yield('content')
 <div class="footer">
     <div class="container">
         <div class="col-md-3 w3agile_footer_grid">
-            <h3>About Us</h3>
-            <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                voluptatibus.</p>
-            <h2><a href="index.html">truc<span>k</span>age</a></h2>
+
+            <h2><img class="img-responsive center-block" src="{{url('images/logo-rodape.png')}}"/> </h2>
         </div>
         <div class="col-md-2 w3agile_footer_grid">
             <h3>Links</h3>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="mail.html">Mail Us</a></li>
+                <li><a href="{{url('/')}}">Home</a></li>
+                <li><a href="{{url('/servicos')}}">Serviços</a></li>
+                <li><a href="{{url('/sobre')}}">Sobre</a></li>
+                <li><a href="{{url('/contato')}}">Contato</a></li>
             </ul>
         </div>
-        <div class="col-md-4 w3agile_footer_grid">
-            <h3>Twitter Posts</h3>
-            <ul class="w3agile_footer_grid_list">
-                <li>Ut aut reiciendis voluptatibus maiores alias, ut aut reiciendis.
-                    <span>02 days ago</span></li>
-                <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
-                    voluptatibus.<span>03 days ago</span></li>
-            </ul>
-        </div>
-        <div class="col-md-3 w3agile_footer_grid">
-            <h3>Instagram</h3>
-            <div class="w3agile_footer_grid_left">
-                <a href="single.html"><img src="images/9.jpg" alt=" " class="img-responsive" /></a>
-            </div>
-            <div class="w3agile_footer_grid_left">
-                <a href="single.html"><img src="images/10.jpg" alt=" " class="img-responsive" /></a>
-            </div>
-            <div class="w3agile_footer_grid_left">
-                <a href="single.html"><img src="images/11.jpg" alt=" " class="img-responsive" /></a>
-            </div>
-            <div class="w3agile_footer_grid_left">
-                <a href="single.html"><img src="images/8.jpg" alt=" " class="img-responsive" /></a>
-            </div>
-            <div class="w3agile_footer_grid_left">
-                <a href="single.html"><img src="images/7.jpg" alt=" " class="img-responsive" /></a>
-            </div>
-            <div class="w3agile_footer_grid_left">
-                <a href="single.html"><img src="images/6.jpg" alt=" " class="img-responsive" /></a>
-            </div>
+
+        <div class="col-md-7 w3agile_footer_grid">
+            <h3>Facebook</h3>
+            <div class="fb-page" data-href="https://www.facebook.com/transforteura" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/transforteura" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/transforteura">Transforte</a></blockquote></div>
             <div class="clearfix"> </div>
         </div>
         <div class="clearfix"> </div>
@@ -447,7 +126,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="agileinfo_copy_right">
     <div class="container">
         <div class="agileinfo_copy_right_left">
-            <p>© 2017 Truckage. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            <p>© 2017 Transforte. Todos os direitos reservados</p>
         </div>
         <div class="agileinfo_copy_right_right">
             <ul class="social">
@@ -455,21 +134,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <i></i>
                         <div class="tooltip"><span>Facebook</span></div>
                     </a></li>
-                <li><a class="social-twitter" href="#">
-                        <i></i>
-                        <div class="tooltip"><span>Twitter</span></div>
-                    </a></li>
+
                 <li><a class="social-google" href="#">
                         <i></i>
                         <div class="tooltip"><span>Google+</span></div>
-                    </a></li>
-                <li><a class="social-facebook" href="#">
-                        <i></i>
-                        <div class="tooltip"><span>Pinterest</span></div>
-                    </a></li>
-                <li><a class="social-instagram" href="#">
-                        <i></i>
-                        <div class="tooltip"><span>Instagram</span></div>
                     </a></li>
             </ul>
         </div>
@@ -478,7 +146,57 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 <!-- //footer -->
 <!-- for bootstrap working -->
-<script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
+<script src="{{asset('js/bootstrap.js')}}"></script>
+
+<!-- flexSlider -->
+
+<script defer src="{{asset('js/jquery.flexslider.js')}}"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+        $('.flexslider').flexslider({
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 220,
+            itemMargin: 4,
+            start: function(slider){
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+<!-- //flexSlider -->
+<!-- //js -->
+<!-- load-more -->
+
+<script src="{{asset('js/bars.js')}}"></script>
+<script src="{{asset('js/counterup.min.js')}}"></script>
+<script src="{{asset('js/waypoints.min.js')}}"></script>
+
+
+<script type="text/javascript" src="{{asset('js/demo.js')}}"></script>
+<script>
+    $(document).ready(function () {
+        size_li = $("#myList li").size();
+        x=1;
+        $('#myList li:lt('+x+')').show();
+        $('#loadMore').click(function () {
+            x= (x+1 <= size_li) ? x+1 : size_li;
+            $('#myList li:lt('+x+')').show();
+        });
+        $('#showLess').click(function () {
+            x=(x-1<0) ? 1 : x-1;
+            $('#myList li').not(':lt('+x+')').hide();
+        });
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+    });
+</script>
+
+<!-- //load-more -->
+
 <!-- //for bootstrap working -->
 </body>
 </html>

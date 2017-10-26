@@ -12,5 +12,24 @@
 */
 
 Route::get('/', function () {
-    return view('site.index');
+    return view('site.app');
+});
+
+
+Route::get('/sobre',function (){
+   return view('site.sobre');
+});
+
+
+Route::get('/servicos',function (){
+    return view('site.servicos');
+});
+
+
+Route::get('/contato',function (){
+    return view('site.contato');
+});
+
+Route::get('/galeria-fotos',function (){
+    return view('site.galeria_fotos');
 });
