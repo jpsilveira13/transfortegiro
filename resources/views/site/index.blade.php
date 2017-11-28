@@ -27,6 +27,7 @@
     <!-- //for-mobile-apps -->
     <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" property="" />
+    @yield('css-lightbox')
     <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
     <!-- js -->
     <link rel="shortcut icon" type="image/x-icon" href="{{url('images/logo/favicon.ico')}}">
@@ -103,7 +104,7 @@
     <div class="container">
         <div class="col-md-3 w3agile_footer_grid">
 
-            <h2><img class="img-responsive center-block" src="{{url('images/logo-rodape.png')}}"/> </h2>
+            <h2><img class="img-responsive center-block image-menor" src="{{url('images/logo-rodape.png')}}"/> </h2>
         </div>
         <div class="col-md-2 w3agile_footer_grid">
             <h3>Links</h3>
@@ -157,7 +158,7 @@
         $('.flexslider').flexslider({
             animation: "slide",
             animationLoop: false,
-            itemWidth: 220,
+                itemWidth: 140,
             itemMargin: 4,
             start: function(slider){
                 $('body').removeClass('loading');
@@ -173,7 +174,7 @@
 <script src="{{asset('js/counterup.min.js')}}"></script>
 <script src="{{asset('js/waypoints.min.js')}}"></script>
 
-
+@yield('js-lightbox')
 <script type="text/javascript" src="{{asset('js/demo.js')}}"></script>
 <script>
     $(document).ready(function () {

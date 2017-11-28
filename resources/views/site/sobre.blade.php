@@ -22,8 +22,8 @@
             <h3>Sobre</h3>
             <p class="quia">Descrição da Transforte Giro</p>
 
-            <div class="agile_about_grids">
-                <div class="col-md-6 agile_about_grid_left">
+            <div class="agile_about_grids ">
+                <div class="col-md-6 agile_about_grid_left hidden-sm hidden-xs">
                     <div class="col-md-6 agile_about_grid_left1">
                         <img src="{{url('images/image-mini1.jpg')}}" alt=" " class="img-responsive" />
                     </div>
