@@ -1,0 +1,239 @@
+p{
+    line-height: 20px;
+    margin: 15px 0;
+    color: #747474;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.bread-equipamentos{
+    position: relative;
+    padding: 60px 0 50px;
+    background-color: #363563;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bread-equipamentos:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0,0,0,0.70);
+}
+
+.bread-equipamentos h1 {
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 800;
+    z-index: 5;
+}
+
+.bread-equipamentos h1:after {
+    content: '';
+    position: relative;
+    top: 5px;
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto 0;
+    background: #fff;
+}
+
+.bread-equipamentos .breadcrumb {
+    position: relative;
+    margin: 0;
+    padding: 30px 0 0;
+    z-index: 5;
+    background: transparent;
+}
+
+.bread-equipamentos .breadcrumb li {
+    position: relative;
+    display: inline-block;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.bread-equipamentos .breadcrumb li a {
+    position: relative;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.lista-produtos p{
+    color: #939393;
+    line-height: 20px;
+    margin: 15px 0;
+}
+.lista-produtos ul{
+    list-style: none;
+}
+.lista-produtos ul li {
+    width: 320px;
+    float: left;
+    margin: 0 30px 30px 0;
+    background: #fff url(images/botao-mais.gif) no-repeat bottom right;
+}
+
+.lista-produtos ul li figure {
+    border-bottom: 3px solid #F7B400;
+}
+.lista-produtos ul li img {
+    display: block;
+}
+
+.lista-produtos ul li a:hover{
+    width: 100%;
+    display: block;
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+}
+
+.lista-produtos ul li span {
+    box-sizing: border-box;
+    padding: 30px 20px 40px 20px;
+    display: block;
+    min-height: 200px;
+}
+.lista-produtos ul li h2 {
+
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #656565;
+    font-weight: bold;
+}
+
+.lista-produtos ul li a h3 {
+
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    color: #F7B400;
+    font-weight: bold;
+}
+
+.botao-amarelo{
+    color: #fff;
+    background: #F7B400;
+    padding: 15px 0;
+}
+
+.lista-produtos ul li a ul li {
+    color: #939393;
+}
+
+.lista-produtos ul li ul li, .lista-produtos ul li ul li:nth-child(3n) {
+    width: 100%;
+    min-height: inherit;
+    margin: 0 0 6px 0;
+    padding: 0 0 6px 0;
+    border-bottom: 1px solid #e8e8e8;
+    background: none;
+}
+
+.lista-produtos ul li ul li:before {
+
+    margin: 0 5px 0 0;
+}
+
+
+.sidebar-equipamento{
+    background: #fff;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 968px){
+    .lista-produtos ul li {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+}
+
+/* produto interno */
+
+
+h2.tit-simple {
+
+    font-size: 16px;
+    color: #747474;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2.tit-simple:after {
+    content: "";
+    width: 120px;
+    height: 3px;
+    background: #F7B400;
+    display: block;
+    margin: 10px 0 20px 0;
+}
+
+.subtitulo {
+    font-size: 12px;
+    margin: 0 0 30px 0;
+    color: #747474;
+}
+
+
+.info-equipamentos li {
+    width: 100%;
+    display: table;
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.info-equipamentos li i {
+    width: 40px;
+    line-height: 40px;
+    color: #F7B400;
+
+    border-radius: 120px;
+    text-align: center;
+}
+
+.info-equipamentos li span {
+    width: 225px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 40px;
+    color: #747474;
+}
+
+.informacoes_tecnicas h3{
+
+    text-transform: uppercase;
+    margin: 15px 0 0 0;
+    display: inline-block;
+    color: #747474;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.informacoes_tecnicas figure {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    box-sizing: border-box;
+    margin: 20px 0 10px 0;
+    padding: 30px 0;
+}
+
+
+
+

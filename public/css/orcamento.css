@@ -1,0 +1,27 @@
+.wthree_contact_left input[type="text"]:nth-child(2), .wthree_contact_left input[type="email"] {
+    margin: 0
+}
+
+.wthree_contact_left input[type="text"], .wthree_contact_left input[type="email"], .wthree_contact_left textarea {
+    margin-bottom: 10px;
+}
+
+
+.wthree_contact_left textarea {
+    min-height: 200px;
+    margin: 0 1.1em;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 640px){
+    .wthree_contact_left textarea {
+
+        margin:  0;
+        margin-bottom: 10px;
+    }
+    .wthree_contact_left_grid:nth-child(2) {
+        margin:  0;
+    }
+
+}

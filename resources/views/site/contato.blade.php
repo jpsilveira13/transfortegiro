@@ -10,19 +10,7 @@
             </ul>
         </div>
     </div>
-    <div class="banner1">
-        <div class="container">
-        </div>
-    </div>
 
-    <div class="services-breadcrumb">
-        <div class="container">
-            <ul>
-                <li><a href="{{url('/')}}">Home</a><i>|</i></li>
-                <li>Contato</li>
-            </ul>
-        </div>
-    </div>
     <!-- //banner1 -->
 
     <!-- mail -->

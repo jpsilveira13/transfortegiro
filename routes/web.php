@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('site.app');
-});
+Route::get('/', 'SiteController@site');
 
 
 Route::get('/sobre',function (){
@@ -33,3 +31,8 @@ Route::get('/contato',function (){
 Route::get('/galeria-fotos',function (){
     return view('site.galeria_fotos');
 });
+
+Route::name('solo.equipamento')->get('/equipamentos/{url_nome}','SiteController@equipamentos');
+Route::name('equipamentos')->get('/equipamentos/{url_nome?}/{url_equipamento}','SiteController@equipamento');
+
+Route::name('orcamento')->get('/orcamento/{nome_equipameto}','SiteController@orcamento');

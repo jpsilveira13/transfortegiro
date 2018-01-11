@@ -28,7 +28,11 @@
     <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
     <link rel="stylesheet" href="{{asset('css/flexslider.css')}}" type="text/css" media="screen" property="" />
     @yield('css-lightbox')
+
     <link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+    @yield('equipamento')
+    @yield('orcamento')
+    <link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
     <!-- js -->
     <link rel="shortcut icon" type="image/x-icon" href="{{url('images/logo/favicon.ico')}}">
     <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -88,6 +92,21 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="{{url('/')}}"><span data-hover="Home">Home</span></a></li>
                         <li><a href="{{url('servicos')}}"><span data-hover="Serviços">Serviços</span></a></li>
+                       <!-- <li class="dropdown">
+
+                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Equipamentos <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'munck'])}}">Munck</a> </li>
+                                <li class="divider"></li>
+                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' =>'guindaste'])}}">Guindaste</a> </li>
+                                <li class="divider"></li>
+                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'plataforma-elevatoria'])}}">Plataforma Elevatória</a> </li>
+                                <li class="divider"></li>
+
+                            </ul>
+
+                        </li> -->
                         <li><a href="{{url('sobre')}}"><span data-hover="Sobre">Sobre</span></a></li>
                         <li><a href="{{url('galeria-fotos')}}"><span data-hover="Galeria de Fotos">Galeria de Fotos</span></a></li>
                         <!--<li><a href="#"><span data-h</a> </li> -->
@@ -158,7 +177,7 @@
         $('.flexslider').flexslider({
             animation: "slide",
             animationLoop: false,
-                itemWidth: 140,
+            itemWidth: 140,
             itemMargin: 4,
             start: function(slider){
                 $('body').removeClass('loading');
@@ -195,7 +214,12 @@
         });
     });
 </script>
-
+@if(!Request::is('/'))
+    <script type="text/javascript">
+        $('html, body').animate({
+            scrollTop: 440}, 2122,'swing');
+    </script>
+@endif
 <!-- //load-more -->
 
 <!-- //for bootstrap working -->
