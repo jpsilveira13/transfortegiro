@@ -29,8 +29,12 @@
                         $diretorio = dir($path);
                         while($arquivo = $diretorio->read()){
                         if($arquivo != "." && $arquivo != ".."){
+<<<<<<< HEAD
                         echo '<div  class="col-lg-4 col-sm-6 col-xs-12"><a data-lightbox="roadtrip" title="Imagens Transforte Giro" href="images/galeria/'.$arquivo.'">
                         <img class="thumbnail img-responsive" src="images/galeria/'.$arquivo.'"></a></div>';
+=======
+                        echo '<div  class="col-lg-4 col-sm-4 col-xs-6"><a  title="Imagens Transforte Giro" href="javascript:void(0)"><img class="thumbnail img-responsive" src="images/galeria/'.$arquivo.'"></a></div>';
+>>>>>>> ff6a8949d559b4ed3b1d7eea670ec129966657c1
 }
                         }
             @endphp
