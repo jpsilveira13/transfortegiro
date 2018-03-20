@@ -92,7 +92,7 @@
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="{{url('/')}}"><span data-hover="Home">Home</span></a></li>
                         <li><a href="{{url('servicos')}}"><span data-hover="Serviços">Serviços</span></a></li>
-                       <!-- <li class="dropdown">
+                        <li class="dropdown">
 
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Equipamentos <span class="caret"></span></a>
                             <ul class="dropdown-menu">
@@ -101,12 +101,14 @@
                                 <li class="divider"></li>
                                 <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' =>'guindaste'])}}">Guindaste</a> </li>
                                 <li class="divider"></li>
-                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'plataforma-elevatoria'])}}">Plataforma Elevatória</a> </li>
+                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'cacamba'])}}">Caçamba</a> </li>
                                 <li class="divider"></li>
+                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'plataforma-elevatoria'])}}">Plataforma Elevatória</a> </li>
+
 
                             </ul>
 
-                        </li> -->
+                        </li>
                         <li><a href="{{url('sobre')}}"><span data-hover="Sobre">Sobre</span></a></li>
                         <li><a href="{{url('galeria-fotos')}}"><span data-hover="Galeria de Fotos">Galeria de Fotos</span></a></li>
                         <!--<li><a href="#"><span data-h</a> </li> -->
@@ -164,6 +166,7 @@
         <div class="clearfix"> </div>
     </div>
 </div>
+
 <!-- //footer -->
 <!-- for bootstrap working -->
 <script type="text/javascript" src="{{asset('js/jquery-2.1.4.min.js')}}"></script>
@@ -223,5 +226,59 @@
 <!-- //load-more -->
 
 <!-- //for bootstrap working -->
+
+<!-- modal orçamento -->
+
+@if(isset($temOrcamento))
+    <div  class="btnOrcamento">
+        <a href="#orcamento" data-target="#orcamento" data-toggle="modal" title="Orçamento produto">
+            <img src="http://inovarlocacoes.com.br/img/btLigamos.png" border="0" alt="Orçamento" class="transparenciaFracaHover transicaoPadrao float-shadow2" id="btOrcamento">
+        </a>
+    </div>
+    <div class="modal fade in" id="orcamento" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+                    <h4 class="modal-title" id="myModalLabel">Orçamento do produto {{$equipamento->nome}}!</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="hide-body">
+                        <img class="img-responsive center-block borda-image" src="{{url('images/logo/logo-header.png')}}">
+                        <hr />
+                        <h2 class="titulo-modal">Preencha os formulário</h2>
+                    </div>
+                    <form id="emailLigamos" class="form-modal" action="">
+
+                        <div class="form-group">
+                            <input class="form-control input transicaoPadrao" required type="text" placeholder="Informe seu nome ou da empresa">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input transicaoPadrao" required type="text" placeholder="Informe seu telefone de contato">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input transicaoPadrao" required type="email" placeholder="Informe seu e-mail">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input transicaoPadrao" required type="text" placeholder="Informe seu estado">
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control input transicaoPadrao" required type="text" placeholder="Informe a sua cidade">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control input transicaoPadrao" placeholder="Informe o assunto"></textarea>
+                        </div>
+                        <div class="text-center">
+
+                            <button id="btnLigar" type="submit" class="transicaoPadrao transparenciaFracaHover float-shadow2">Enviar</button>
+                            <div class="labelBotao">Vamos entrar em contato com você </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
+
 </body>
 </html>

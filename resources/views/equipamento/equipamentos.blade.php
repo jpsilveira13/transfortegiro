@@ -21,23 +21,28 @@
         <div class="container">
             <div class="row">
                 <section class="lista-produtos">
-                    <ul>
-                        @foreach($equipamentos as $equipamento)
-                            <div class="col-md-4 col-lg-4 col-xs-12 col-sm-6">
-                                <li>
-                                    <a href="{{route('equipamentos',['url_nome' => $equipamento->categoria->url_nome,'url_equipamento' => $equipamento->url_nome])}}" title="Locação de Guindastes">
-                                        <figure><img width="320" height="200"  src="http://cesarmaq.com.br/wp-content/uploads/2017/07/locacao-de-guindastes-1-320x200.jpg" class="img-responsive center-block" alt="Locação de Guindastes"></figure>
-                                        <span>
-                            <h2 class="text-center">Lorem Ipsum</h2>
-                            <p class="text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    @if($equipamentos->count() > 0)
+                        <ul>
+                            @foreach($equipamentos as $equipamento)
+                                <div class="col-md-4 col-lg-4 col-xs-12 col-sm-6">
+                                    <li>
+                                        <a href="{{route('equipamentos',['url_nome' => $equipamento->categoria->url_nome,'url_equipamento' => $equipamento->url_nome])}}" title="Locação de Guindastes">
+                                            <figure><img width="320" height="200"  src="{{url('images/galeria')}}/{{$equipamento->url_image}}" class="img-responsive center-block" alt="Locação de Guindastes"></figure>
+                                            <span>
+                            <h2 class="text-center">{{$equipamento->nome}}</h2>
+                            <p class="text-center text-uppercase">{!! str_limit($equipamento->descricao,$limit= 100,$end = '...') !!} </p>
 
                                                     </span>
-                                        <div class="botao-amarelo text-center">SAIBA MAIS</div>
-                                    </a>
-                                </li>
-                            </div>
-                        @endforeach
-                    </ul>
+                                            <div class="botao-amarelo text-center">SAIBA MAIS</div>
+                                        </a>
+                                    </li>
+                                </div>
+                            @endforeach
+                        </ul>
+                    @else
+                        <h1 class="text-center text-uppercase "><strong>Equipamento não cadastrado!</strong></h1>
+                        <br />
+                    @endif
                 </section>
             </div>
         </div>

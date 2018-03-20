@@ -32,8 +32,10 @@ class SiteController extends Controller
     }
 
     public function equipamento($url_nome,$url_equipamento){
+
         $equipamento = $this->subcategoria->where('url_nome',$url_equipamento)->orWhere('url_nome',$url_nome)->first();
-        return view('equipamento.equipamento',compact('equipamento'));
+        $temOrcamento = true;
+        return view('equipamento.equipamento',compact('equipamento','temOrcamento'));
     }
 
     public function orcamento($nome_equipamento){

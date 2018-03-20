@@ -19,6 +19,11 @@ class CreateSubcategoriaTable extends Migration
             $table->string('nome');
             $table->string('modelo',50);
             $table->string('url_nome',250);
+            $table->text('descricao');
+            $table->string('capacidade',200);
+            $table->string('altura_lanca',200);
+            $table->string('comprimento',200);
+            $table->string('url_image',250);
             $table->foreign('categoria_id')->references('id')->on('categoria');
             $table->timestamps();
         });
