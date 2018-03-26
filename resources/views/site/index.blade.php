@@ -58,7 +58,7 @@
     <div class="container">
         <div class="w3l_header_left text-center">
             <ul>
-                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(34) 3322-6022 / 3312-3106</li>
+                <li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(34) 3313-6677 / 3312-3106</li>
                 <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:administrativo@pwtransforte.com.br">administrativo@pwtransforte.com.br</a></li>
             </ul>
         </div>
@@ -96,12 +96,11 @@
 
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Equipamentos <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-
-                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'munck'])}}">Munck</a> </li>
-                                <li class="divider"></li>
                                 <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' =>'guindaste'])}}">Guindaste</a> </li>
                                 <li class="divider"></li>
-                                <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'cacamba'])}}">Caçamba</a> </li>
+                                <li><a class="text-center text-uppercase" href="{{url('equipamentos/munck/munck')}}">Munck</a> </li>
+                                <li class="divider"></li>
+                                <li><a class="text-center text-uppercase" href="{{url('equipamentos/cacamba/cacamba')}}">Caçamba</a> </li>
                                 <li class="divider"></li>
                                 <li><a class="text-center text-uppercase" href="{{route('solo.equipamento',['url_nome' => 'plataforma-elevatoria'])}}">Plataforma Elevatória</a> </li>
 
@@ -240,7 +239,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
-                    <h4 class="modal-title" id="myModalLabel">Orçamento do produto {{$equipamento->nome}}!</h4>
+                    <h4 class="modal-title" id="myModalLabel">Orçamento do produto <strong>{{$equipamento->nome}}</strong>!</h4>
                 </div>
                 <div class="modal-body">
                     <div class="hide-body">

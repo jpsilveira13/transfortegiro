@@ -27,7 +27,7 @@
                                 <div class="col-md-4 col-lg-4 col-xs-12 col-sm-6">
                                     <li>
                                         <a href="{{route('equipamentos',['url_nome' => $equipamento->categoria->url_nome,'url_equipamento' => $equipamento->url_nome])}}" title="Locação de Guindastes">
-                                            <figure><img width="320" height="200"  src="{{url('images/galeria')}}/{{$equipamento->url_image}}" class="img-responsive center-block" alt="Locação de Guindastes"></figure>
+                                            <figure><img width="320" height="200"  src="{{url('images/servicos')}}/{{$equipamento->url_image}}" class="img-responsive center-block" alt="Locação de Guindastes"></figure>
                                             <span>
                             <h2 class="text-center">{{$equipamento->nome}}</h2>
                             <p class="text-center text-uppercase">{!! str_limit($equipamento->descricao,$limit= 100,$end = '...') !!} </p>

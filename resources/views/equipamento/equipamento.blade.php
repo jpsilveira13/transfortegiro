@@ -3,7 +3,6 @@
     <link href="{{asset('css/equipamento.css')}}" rel="stylesheet" type="text/css" media="all" />
 @endsection
 @section('content')
-
     <section class="bread-equipamentos text-center">
         <div class="container">
             <h1>Equipamento</h1>
@@ -21,11 +20,12 @@
     <div  style="background: #F4F4F4; padding-top: 30px">
         <div class="container">
             <div class="row">
-                <section class="lista-produto">
+                <section class="lista-produto" style="margin-bottom: 20px">
                     <div class="col-md-8  col-xs-12">
                         <h2 class="tit-simple">{{$equipamento->modelo}}</h2>
                         <h2 class="subtitulo">Descrição da Categoria</h2>
                         <p>{!! $equipamento->descricao !!}</p>
+                        <img src="{{url('images/servicos')}}/{{$equipamento->url_image}}"  class="img-responsive center-block" alt="Gráfico de Carga">
                     </div>
                     <div class="col-md-4 col-xs-12">
                         <section class="sidebar-equipamento">
@@ -45,17 +45,24 @@
 
                         </section>
                     </div>
-                    <div class="col-md-12">
-                        <div class="informacoes_tecnicas">
+                    <div class="clearfix"></div>
+                    @if($equipamento->categoria_id !=4)
+                        <div class="col-md-12">
+                            <div class="informacoes_tecnicas">
 
-                            <div>
-                                <h3>Gráfico de Carga</h3>
-                                <figure><img src="http://cesarmaq.com.br/wp-content/uploads/2017/07/grafico-de-carga.jpg"  class="img-responsive center-block" alt="Gráfico de Carga"></figure>
+                                <div>
+                                    <h3>Gráfico de Carga</h3>
+                                    <figure><img src="http://cesarmaq.com.br/wp-content/uploads/2017/07/grafico-de-carga.jpg"  class="img-responsive center-block" alt="Gráfico de Carga"></figure>
+                                </div>
+
                             </div>
-
                         </div>
-                    </div>
+
+
+                    @endif
+
                 </section>
+
             </div>
         </div>
     </div>

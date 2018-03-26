@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => 'inovarloca.virtuaserver.com.br',
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'port' => env('MAIL_PORT', 587),
+    'port' => 465,
 
     /*
     |--------------------------------------------------------------------------
@@ -55,10 +55,7 @@ return [
     |
     */
 
-    'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
-    ],
+    'from' => ['address' => 'naoresponder@transfortegiro.com.br', 'name' => 'Transforte Giro'],
 
     /*
     |--------------------------------------------------------------------------
@@ -71,7 +68,7 @@ return [
     |
     */
 
-    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+    'encryption' => 'ssl',
 
     /*
     |--------------------------------------------------------------------------
@@ -84,9 +81,9 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => 'naoresponder@transfortegiro.com.br',
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => 'transforte200*1',
 
     /*
     |--------------------------------------------------------------------------
@@ -111,6 +108,7 @@ return [
     | of the emails. Or, you may simply stick with the Laravel defaults!
     |
     */
+    'pretend' => false,
 
     'markdown' => [
         'theme' => 'default',
