@@ -13,7 +13,8 @@ class Subcategoria extends Model
         'categoria_id',
         'nome',
         'modelo',
-        'url_nome'
+        'url_nome',
+        'url_image_carga'
     ];
 
     public function categoria(){

@@ -30,34 +30,58 @@
                     <div class="col-md-4 col-xs-12">
                         <section class="sidebar-equipamento">
                             <div class="info-equipamentos">
-                                <ul>
-                                    <li><i class="fa fa-cubes" aria-hidden="true"></i><span>Capacidade máxima: {{$equipamento->capacidade}}</span></li>
+                                @if($equipamento->categoria_id != 4)
+                                    <ul>
+                                        <li><i class="fa fa-cubes" aria-hidden="true"></i><span>Capacidade máxima: {{$equipamento->capacidade}}</span></li>
 
 
-                                    <li><i class="fa fa-arrow-up" aria-hidden="true"></i> <span>Altura máxima de elevação da lança telescópica: {{$equipamento->altura_lanca}}</span></li>
+                                        <li><i class="fa fa-arrow-up" aria-hidden="true"></i> <span>Altura máxima de elevação da lança telescópica: {{$equipamento->altura_lanca}}</span></li>
 
-                                    <li><i class="fa fa-arrow-up" aria-hidden="true"></i> <span>Altura máxima de elevação lança telescópica + JIB: 40</span></li>
+                                        <li><i class="fa fa-arrow-up" aria-hidden="true"></i> <span>Altura máxima de elevação lança telescópica + JIB: 40</span></li>
 
-                                    <li><i class="fa fa-level-up" aria-hidden="true"></i> <span>Comprimento: {{$equipamento->comprimento}}</span></li>
+                                        <li><i class="fa fa-level-up" aria-hidden="true"></i> <span>Comprimento: {{$equipamento->comprimento}}</span></li>
 
-                                </ul>
+                                    </ul>
+                                @else
+                                    <ul>
+                                        <li><i class="fa fa-cubes" aria-hidden="true"></i><span>Capacidade mínima: 3 m³</span></li>
+                                        <li><i class="fa fa-cubes" aria-hidden="true"></i><span>Capacidade máxima: 5 m³</span></li>
+
+                                    </ul>
+                                @endif
                             </div>
 
                         </section>
                     </div>
                     <div class="clearfix"></div>
-                    @if($equipamento->categoria_id !=4)
+
+                    @if($equipamento->categoria_id ==2)
                         <div class="col-md-12">
                             <div class="informacoes_tecnicas">
 
                                 <div>
-                                    <h3>Gráfico de Carga</h3>
-                                    <figure><img src="http://cesarmaq.com.br/wp-content/uploads/2017/07/grafico-de-carga.jpg"  class="img-responsive center-block" alt="Gráfico de Carga"></figure>
+                                    <h3>Gráfico/Tabela de Carga</h3>
+                                    <figure><img src="{{url('images/servicos')}}/{{$equipamento->url_image_carga}}"  class="img-responsive center-block" alt="Gráfico de Carga"></figure>
                                 </div>
 
                             </div>
                         </div>
 
+
+                    @elseif($equipamento->categoria_id == 1)
+
+                        <div class="col-md-12">
+                            <div class="informacoes_tecnicas">
+
+                                <div>
+                                    <h3>Gráfico/Tabela de Carga</h3>
+                                    @for($i = 1; $i<3;$i++)
+                                        <figure><img src="{{url('images/servicos/carga-grafico')}}{{$i}}.jpg"  class="img-responsive center-block" alt="Gráfico de Carga"></figure>
+                                    @endfor
+                                </div>
+
+                            </div>
+                        </div>
 
                     @endif
 
